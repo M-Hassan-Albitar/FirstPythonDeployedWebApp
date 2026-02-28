@@ -3,7 +3,7 @@ from arabic_support import support_arabic_text
 import funcs
 
 # Support Arabic text alignment in all components
-# support_arabic_text(all=True)
+support_arabic_text()
 
 keys_list = list(st.session_state.keys())
 data_file = funcs.read_data()
