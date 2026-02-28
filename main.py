@@ -3,7 +3,7 @@ from arabic_support import support_arabic_text
 import funcs
 
 # Support Arabic text alignment in all components
-support_arabic_text()
+support_arabic_text(all=True)
 
 keys_list = list(st.session_state.keys())
 data_file = funcs.read_data()
@@ -15,10 +15,10 @@ def add_todo():
     st.session_state['todo_input'] = ''
 
 
-st.title("Hello world!")
-st.subheader("This is my todo app..")
+st.title("خاص للغاية")
+st.subheader("رسايل خاصة")
 
-st.text_input(label='', label_visibility="hidden", key='todo_input', placeholder='Enter your todo here',
+st.text_input(label='', label_visibility="hidden", key='todo_input', placeholder='اكتب الرسالة واضغط ارسال..',
               on_change=add_todo)
 
 for index, data in enumerate(data_file):
